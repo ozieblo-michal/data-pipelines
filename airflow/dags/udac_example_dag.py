@@ -110,7 +110,7 @@ run_quality_checks = DataQualityOperator(
     dag = dag
 )
 
-end_operator = DummyOperator(task_id = 'Stop_execution',
+end_operator = DummyOperator(task_id = 'End_execution',
                              dag = dag)
 
 start_operator >> create_tables
